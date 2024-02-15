@@ -1,0 +1,233 @@
+/***************************************************************************/
+/*Whole page*/
+/***************************************************************************/
+/*whole page*/
+body{
+    font-family: sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Button and signup box*/
+.ctnt-sgnup-box,
+button{
+    background-color: #3882F6;
+}
+
+/*Buttons*/
+button{
+    padding: 8px 24px;
+    border: none;
+    border-radius: 8px;
+}
+
+/*For list of links in header, flex display*/
+ul{
+    margin-inline: 0;
+    padding-inline: 0;
+    gap: 16px;
+    list-style-type: none;
+    display: flex;
+}
+
+/*Remove underline in links*/
+a{
+    text-decoration: none;
+}
+
+/*3 main sections of site (header, footer, all direct children of content)*/
+.hdr,
+.ctnt > *,
+.ftr{
+    padding: 0 256px;
+}
+
+/***************************************************************************/
+/*Website content (except header and footer)*/
+/***************************************************************************/
+/*Content except header and footer*/
+.ctnt{
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*All direct children (divs) of content*/
+.ctnt > *{
+    flex: auto;
+}
+
+/*content portfolio*/
+.ctnt-pflio-lst{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+/*Portfolio header*/
+.ctnt-pflio h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+/*Portfolio site*/
+.site{
+    flex: 0 0 auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*site paragraph*/
+.site p{
+    text-align: center;
+}
+
+/*site image*/
+.site img{
+    width: 300px;
+    height: 200px;
+}
+
+/*quote*/
+.ctnt-qte{
+    background-color: #E5E7EB;
+}
+
+/*quote text*/
+#qte-txt{
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    text-align: justify;
+    margin-bottom: 12px;
+}
+
+/*quote author*/
+#qte-athr{
+    font-size: 24px;
+    font-weight: bold;
+    color: #1F2937;
+    text-align: right;
+    margin-top: 12px;    
+}
+
+/*Signup portion*/
+.ctnt-sgnup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+/*Signup box*/
+.ctnt-sgnup-box{
+    padding: 48px 128px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+
+.ctnt-sgnup-box-txt h3{
+    font-weight: bolder;
+    color: #F9FAF8;
+    margin-bottom: 4px;
+    margin-top: 0;
+    font-size: 36px;
+}
+
+.ctnt-sgnup-box-txt p{
+    color: #F9FAF8;
+    margin-top: 4px;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+/*Sign up button*/
+.ctnt-sgnup-box-btn button{
+    color: #F9FAF8;
+    border: solid;
+    border-color: #F9FAF8;
+}
+
+/***************************************************************************/
+/* Header and footer*/
+/***************************************************************************/
+/*header and footer*/
+.hdr,
+.ftr{
+    background-color: #1f2937
+}
+
+/*header*/
+.hdr{
+    padding-top: 8px;
+}
+
+/*footer*/
+.ftr{
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*top header*/
+.top-hdr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*bottom header*/
+.btm-hdr{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+/*Header text, links, and footer text*/
+.ftr,
+.hdr ul a,
+.hdr p{
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #E5E7EB;
+}
+
+/*Header main title*/
+.btm-hdr-txt h1{
+    font-size: 48px;
+    font-family: sans-serif;
+    color: #F9FAF8;
+    font-weight: bolder;
+    margin-block: 0;
+    margin-inline: 0;
+}
+
+/*logo*/
+.top-hdr img{
+    aspect-ratio: auto;
+    height: 75px;
+    width: auto;
+    border-radius: 50%;
+}
+
+/*Bottom header image*/
+.btm-hdr img{
+    aspect-ratio: auto;
+    height: 300px;
+    width: auto;
+}
+
